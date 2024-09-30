@@ -1,0 +1,81 @@
+:root {
+  --dark-900: #353644;
+  --dark-600: #5B6097;
+  --accent-1-400: #FDBF46;
+  --accent-1-600: #D09C37;
+  --accent-2-400: #F06A6D;
+  --accent-2-600: #C95658;
+  --accent-3-400: #54C1AD;
+  --accent-3-600: #429A8A;
+  --light-300: #A3A3B9;
+  --light-100: #FEFEFB;
+}
+
+html {
+  background-color: var(--light-100);
+  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+Header form {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+input[type="text"] {
+  align-self: stretch;
+  min-width: 18rem;
+  border-radius: 100vw;
+  border: 1px solid var(--light-300);
+}
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"] + label {
+  background-color: var(--color-status);
+  color: var(--light-100);
+  padding: 0.7rem 1.4rem;
+  border-radius: 100vw;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+  opacity: 0.8;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--color-status-checked);
+  outline: solid 2px var(--dark-600);
+  outline-offset: 1px;
+}
+
+label[for="active"]{
+  --color-status: var(--accent-3-400);
+  --color-status-checked: var(--accent-3-600)
+}
+
+label[for="pending"]{
+  --color-status: var(--accent-1-400);
+  --color-status-checked: var(--accent-1-600)
+}
+
+label[for="closed"]{
+  --color-status: var(--accent-2-400);
+  --color-status-checked: var(--accent-2-600)
+}
+
+button[type="submit"] {
+  border: none;
+  background-color: var(--dark-600);
+  color: var(--light-100);
+  padding: 0.7rem 1.4rem;
+  border-radius: 100vw;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 1.40663rem;
+  font-weight: 700;
+}

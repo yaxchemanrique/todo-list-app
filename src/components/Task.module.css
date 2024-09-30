@@ -1,0 +1,20 @@
+.task {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: solid 1px var(--light-300);
+  border-radius: 100vw;
+  margin-bottom: 0.75rem;
+  padding: 0.7rem 1.8rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,31 @@
+/* .taskBlock {
+  --w: 0.5px;
+  --content-width: 50px;
+  width: fit-content;
+  border-image-slice: 40 0 0;
+  border-image-width: 100vw 0 0 0;
+  border-image-source: linear-gradient(transparent calc(50% - var(--w)),#9198e5 calc(50% - var(--w)),var(--light-300) calc(50% + var(--w)), transparent calc(50% + var(--w)));
+  border-style: solid;
+  margin-inline-end: auto;
+  position: relative;
+}
+.taskBlock::after{
+  content: '';
+  display: block;
+  width: var(--content-width);
+  height: 10px;
+  position: absolute;
+  top:0;
+
+  background-color: #9198e5;
+} */
+
+.h2 {
+  width: fit-content;
+  border-radius: 100vw;
+  background-color: var(--status-color);
+  color: var(--light-100);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+}
